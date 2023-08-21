@@ -17,9 +17,9 @@ const Header = () => {
   return (
     <header className="bg-white px-6 md:px-0 lg:px-0 shadow fixed w-full">
       <nav className=" w-full flex justify-between py-3 container mx-auto">
-        <div className=" w-28">
+        <div className=" w-36">
           <Link className="font-black text-orange-500" href="/">
-            Next User
+            Assignment-12
           </Link>
         </div>
         <div className="lg:hidden">
