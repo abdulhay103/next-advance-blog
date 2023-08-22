@@ -1,5 +1,5 @@
 export default async function getPostList() {
-  // Get Newest Post
+  // Get Post List By Category
   const postList = process.env.POST_LIST;
   console.log(postList);
   const res = await fetch(postList);
@@ -8,6 +8,6 @@ export default async function getPostList() {
   }
 
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
   return data;
 }

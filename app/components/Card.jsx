@@ -15,7 +15,9 @@ const Card = ({ post }) => {
           layout="responsive"
         />
       </div>
-      <Link href="#">{post.title}</Link>
+      <Link className="py-3" href={`/blog/${post.id}`}>
+        {post.title}
+      </Link>
     </div>
   );
 };
