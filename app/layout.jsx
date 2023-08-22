@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 export const metadata = {
-  title: "Intriduce Next",
+  title: "Next Blog Project",
   description: "Learn with OSTAD team",
 };
 
