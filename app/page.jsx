@@ -1,5 +1,4 @@
 import postLists from "@/app/api/getPostList.js";
-import Card from "./components/Card";
 import Image from "next/image";
 import Link from "next/link";
 const page = async () => {
@@ -10,11 +9,11 @@ const page = async () => {
         <h1 className="p-3 text-lg font-bold text-lime-700 text-center">
           Section-1, Image view.
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 p-5">
           {posts.map((post) => {
             return (
-              <div className=" bg-white rounded shadow p-5 border-1 border-gray-600">
-                <div className=" w-full">
+              <div className=" bg-white rounded shadow p-4 border-1 border-gray-600">
+                <div className=" w-full rounded">
                   <Image
                     src={post.img}
                     alt="pp"
