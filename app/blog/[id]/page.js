@@ -14,7 +14,13 @@ const page = async ({ params }) => {
       ) : (
         <div className=" bg-white p-5">
           <h2 className=" text-lg font-bold py-4">{post.title}</h2>
-          <Image src={post.img} width={500} height={500} layout="responsive" />
+          <Image
+            src={post.img}
+            width={500}
+            height={500}
+            layout="responsive"
+            alt="Blog Image"
+          />
           <p className="py-4">{post.content}</p>
         </div>
       )}
