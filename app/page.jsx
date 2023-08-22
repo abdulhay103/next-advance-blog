@@ -41,7 +41,9 @@ const page = async () => {
                 key={post.id}
                 className=" bg-white rounded shadow p-5 border-1 border-gray-600"
               >
-                <Link href="#">{post.title}</Link>
+                <Link className="py-3" href="#">
+                  {post.title}
+                </Link>
               </div>
             );
           })}
