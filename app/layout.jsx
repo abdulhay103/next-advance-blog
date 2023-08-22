@@ -4,10 +4,10 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
-export const metadata = {
-  title: "Intriduce Next",
-  description: "Learn with OSTAD team",
-};
+// export const metadata = {
+//   title: "Intriduce Next",
+//   description: "Learn with OSTAD team",
+// };
 
 export default function RootLayout({ children }) {
   return (
