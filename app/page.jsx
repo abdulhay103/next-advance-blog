@@ -12,7 +12,10 @@ const page = async () => {
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 p-5">
           {posts.map((post) => {
             return (
-              <div className=" bg-white rounded shadow p-4 border-1 border-gray-600">
+              <div
+                key={post.id}
+                className=" bg-white rounded shadow p-4 border-1 border-gray-600"
+              >
                 <div className=" w-full rounded">
                   <Image
                     src={post.img}
@@ -34,7 +37,10 @@ const page = async () => {
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 p-5">
           {posts.map((post) => {
             return (
-              <div className=" bg-white rounded shadow p-5 border-1 border-gray-600">
+              <div
+                key={post.id}
+                className=" bg-white rounded shadow p-5 border-1 border-gray-600"
+              >
                 <Link href="#">{post.title}</Link>
               </div>
             );
@@ -48,7 +54,10 @@ const page = async () => {
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 p-5">
           {posts.map((post) => {
             return (
-              <div className=" bg-white rounded shadow p-5 border-1 border-gray-600">
+              <div
+                key={post.id}
+                className=" bg-white rounded shadow p-5 border-1 border-gray-600"
+              >
                 <Link href="#">{post.short}</Link>
               </div>
             );
