@@ -4,11 +4,6 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
-export const metadata = {
-  title: "Next Blog Project",
-  description: "Learn with OSTAD team",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
