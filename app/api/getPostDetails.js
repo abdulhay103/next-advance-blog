@@ -8,6 +8,5 @@ export default async function getPostDetails(id) {
 
   const data = await res.json();
   const postDetails = data.postDetails;
-  // console.log(postDetails);
   return postDetails;
 }

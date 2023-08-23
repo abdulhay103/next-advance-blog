@@ -4,7 +4,7 @@ import React from "react";
 const page = () => {
   return (
     <div className="flex gap-5">
-      <div>
+      <div className=" w-full">
         <h2>You can contact us directly at:</h2>
         <p>contact_next@user.com</p>
         <p>
@@ -33,17 +33,29 @@ const page = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className=" w-full p-6">
         <h2>Contact Us</h2>
         <form action="">
           <div>
-            <input type="text" placeholder="Full Name" />
+            <input
+              className=" w-full py-3 px-5 rounded placeholder:text-lime-600 my-3"
+              type="text"
+              placeholder="Full Name"
+            />
           </div>
           <div>
-            <input type="email" placeholder="Email" />
+            <input
+              className=" w-full py-3 px-5 rounded placeholder:text-lime-600 my-3"
+              type="email"
+              placeholder="Email"
+            />
           </div>
           <div>
-            <input type="text" placeholder="Subject" />
+            <input
+              className=" w-full py-3 px-5 rounded placeholder:text-lime-600 my-3"
+              type="text"
+              placeholder="Subject"
+            />
           </div>
           <div>
             <textarea type="text" placeholder="Massage" />
