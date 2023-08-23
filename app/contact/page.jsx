@@ -1,11 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import Button from "../components/Button";
-import Image from "next/image";
-import facebook from "@/public/facebook.svg";
-import github from "@/public/github.svg";
-import linkedin from "@/public/linkedin.svg";
-import twiter from "@/public/twiter.svg";
 
 const page = () => {
   return (
