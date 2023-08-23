@@ -5,7 +5,7 @@ const page = async () => {
   const posts = await postLists();
   return (
     <main className="">
-      <section className=" bg-white">
+      <section className=" bg-blue-100 py-7">
         <h1 className="p-3 text-lg font-bold text-lime-700 text-center">
           Section-1, Image view.
         </h1>
@@ -14,10 +14,11 @@ const page = async () => {
             return (
               <div
                 key={post.id}
-                className=" bg-white rounded shadow p-4 border-1 border-gray-600"
+                className=" bg-white rounded shadow p-4 border-1 border-gray-600 transition-all hover:scale-105 ease-in-out hover:skew-y-1"
               >
-                <div className=" w-full rounded">
+                <div className=" w-full overflow-hidden">
                   <Image
+                    className="rounded"
                     src={post.img}
                     alt="pp"
                     width={500}
@@ -39,7 +40,7 @@ const page = async () => {
             return (
               <div
                 key={post.id}
-                className=" bg-white rounded shadow p-5 border-1 border-gray-600"
+                className=" bg-white rounded shadow p-5 border-1 border-gray-600 animate-bounce hover:animate-none transition-all"
               >
                 <Link className="py-3" href="#">
                   {post.title}
@@ -58,7 +59,7 @@ const page = async () => {
             return (
               <div
                 key={post.id}
-                className=" bg-white rounded shadow p-5 border-1 border-gray-600"
+                className=" bg-white rounded shadow p-5 border-1 border-gray-600 hover:skew-y-3 ease-in-out transition-all"
               >
                 <Link href="#">{post.short}</Link>
               </div>

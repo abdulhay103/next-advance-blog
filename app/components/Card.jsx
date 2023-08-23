@@ -5,7 +5,7 @@ import React from "react";
 const Card = ({ post }) => {
   console.log(post);
   return (
-    <div className=" bg-gray-50 rounded shadow p-5 border-1 border-gray-600">
+    <div className=" bg-gray-50 rounded shadow p-5 border-1 border-gray-600 transition-all hover:scale-105">
       <div className=" w-full">
         <Image
           src={post.img}
